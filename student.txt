@@ -1,5 +1,5 @@
 Student name: Abdelrahman Ghonim
 Student number: 695857
 Student class: IT1A
-URL student GitHub website: https://username.github.io 
-URL student GitHub repository: https://github.com/username/repositoryname 
+URL student GitHub website: https://https://AbdelrahmanGhonim.github.io
+URL student GitHub repository: https://github.com/AbdelrahmanGhonim/AbdelrahmanGhonim.github.io
