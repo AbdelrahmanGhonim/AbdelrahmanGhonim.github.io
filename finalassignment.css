@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/arial-mt');
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
 *{
 	box-sizing: border-box;
 }
@@ -5,36 +8,41 @@
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
+	background-color: white;
 }
 .body1{
 	font-family: sans-serif;
 }
-@import url('http://fonts.cdnfonts.com/css/arial-mt');
 
 .body2{
 	font-family: 'Arial MT Black', sans-serif;
-                                               /* Arial and Helvetica, from where */
+                                              
 }
-@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
 .body4{
 	font-family: 'Helvetica 35 Thin', sans-serif;
 
 }
+
 .navbar{
 
 	display: flex;
-	/*position: fixed;I need to ask should i fix it */
 	justify-content: space-between;
 	align-items: center;
 	background-color: black;
 	color: white;
-	z-index: 15px;
+	z-index: 15;
 }
 img{ /*logo*/
 	width: 40px;
 	height: 40px;
 
 }
+
+
+.Mobilevideo{
+	display: none;
+}
+
 
 .brandname{
 
@@ -73,20 +81,54 @@ display: block;
 	background-color: white;
 	border-radius: 10px;
 }
+figcaption{
+	font-size: 9px;
+	
+}
+.figcaption3{
+	margin-top: 40px;
+}
+ figure {
+	float: right;
+	
+}
+.p2{
+	width: 400px;
+}
+ #section3{
+margin-top: 20px;
+}
+#copyright{
+	background-color: #000;
+	color: #FFF;
+	clear: both;
+	text-align: center;
+}
 /* if our screen (mobile) is less than 650px width do hamburger menu*/
 @media screen and  (max-width: 650px) {
 	.toggle-button{
-
 		display: flex;
 	}
-	video{
-		display: none;
-	}
-	.navbar-links{
+	.Mobilevideo{
+	width: 300px;
+	height: 15rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+.PcAndTabletVideo{
+	display: none;
+}
+
+.navbar-links{
 		display: none;
 width: 100%;
 		
-	}
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+}
 	.navbar{
 		flex-direction: column;
 		align-items: flex-start;
@@ -105,18 +147,47 @@ width: 100%;
 	.aside1{
 		display: none;
 	}
+	.p1,.p2,.p3{
+		width: 100px;
+	}
 
+.Cookies{
+	float: right;
 }
-/* now we will start design the page*/
-h2{
+.figcaption3{
+	margin-top: 50px;
+}
+.image1, .image2, .image3{
+		margin-left: auto;
+		margin-right: auto;
+		}
+.image3{
+	margin-top: -30px;
+}
+	.section1,.section2,.section3{
+		width: 450px;
+		height: 400px;
+	}
+	.Cookies{
+		float: right;
+	}
+}
+/* now we will start design the index page*/
+
+.h2{
+	color: black;
 	text-align: center;
+	font-size: 30px;
 }
+.h3{
+color: black;
+font-size: 25px;
 
+}
 .section1{
 	text-align: left;
 	margin: 50px;
 	border: wheat 2px;
-	background-color: white;
 	text-align: left;
 }
 .header1{
@@ -124,15 +195,25 @@ h2{
 	font-size: 20px;
 	text-indent: 10px;
 }
-.p1, .p2, .p3{
+.p1,.p3{
 	text-indent: 11px;
-	font-size: 16px;
+	font-size: 20px;
 	font-style: normal;
 	color: black;
+	width: 600px;
 }
-.a1{
+.p2{
+	width: 600px;
+	color: black;
+}
+.a1,.a2,.a3{
 	text-decoration: none;
-color: blue;
+color: darkgoldenrod;
+}
+.header1,.header2,.header3{
+	font-size: 20px;
+	color:#061FFA;
+	font-style:oblique;
 }
 .section2{
 	text-align: left;
@@ -146,15 +227,8 @@ color: blue;
 	font-style: initial;
 }
 
-}
-.a2{
-	text-decoration: none;
-		color: #0000FF;
-
-}
 #section3{
-	text-align: left;
-	margin: 20px;
+		margin: 30px;
 	border: wheat 2px;
 	
 }
@@ -163,29 +237,34 @@ color: blue;
 	font-style: initial;
 }
 
-}
-.a3{
-	text-decoration: none;
-		color: blue;
-
-}
 .image1, .image2, .image3{
 	float: right;
 	width: 100px;
 	height: 100px;
-	
+
 }
+
+
 .aside1{
 	float: right;
-margin: 10px;
   border: solid 1px #000;
   border-bottom: 0;
   height: 50px;
   clear: both;
     flex-shrink: 0;
   flex-grow: 0;
+  justify-content: space-between;
 }
-/* if our screen (pc) is less than 500px width do hamburger menu*/
+.ol{
+	color: blue;
+	font-size: 20px;
+}
+li{
+	color: black;
+}
+footer{
+	font-size: 15px;
+}
 
 @media screen and (min-width: 930px){
 	.aside1{
@@ -194,25 +273,53 @@ margin: 10px;
 	.image1, .image2, .image3{
 
 		float: right;
-	}
-	video{
+			}
+
+	.PcAndTabletVideo{
 		margin-left: auto;
 		margin-right: auto;
-		size: 50mb;
-		width: 100px;
-		height: 30px;
+		width: 100%;
+		height: 30rem;
 
 	}
+	figure{
+		margin-top: -70px;
+	}
+.image1, .image2, .image3{
+	float: right;
+	width: 200px;
+	height: 200px;
 }
-/* if our screen (tablet) is less than 500px width do hamburger menu*/
+.image1{
+	margin-top: -100px;
+}
+.image3{
+	margin-top: -100px;
+}
+
+}
 
 @media screen and (min-width: 650px) and (max-width: 929px){
 	.aside1{
 		display: none;
 	}
-	video{
-		margin-left: auto;
-		margin-right: auto;
+	.PcAndTabletVideo{
+		margin-left:40px;
+		height: 30%;
+		width: 60%;
+	}
+	.figcaption3{
+		margin-top: 60px;
+	}
+	.image1, .image2, .image3{
+		float: left;
+	}
+	figure{
+		float: left;
+	}
+	.section1,.section2,.section3{
+		width: 400px;
+		height: 400px;
 	}
 }
 .Cookies{
@@ -222,25 +329,16 @@ margin: 10px;
 	opacity: 50%;
 	color: #000;
 	float: right;	
-}
-video{
-
-height: 130px;	
-width: 150px;
+	margin-top: 100px;
+	margin-right: 5rem;
 }
 
-#copyright{
-	background-color: #000;
-	color: #FFF;
-	clear: both;
-	text-align: center;
+.image1, .image2, .image3{
+	float: right;
+	width: 150px;
+	height: 150px;
 }
-
-
-
-/* we will now do second page*/
-
-}
+/* we will now do product page*/
 .body2, .body1, .body3, .body4{
 	text-transform: lowercase;
 
@@ -268,6 +366,7 @@ width: 150px;
 	clear: both;
 	margin-top: 20px;
 	width: 450px;
+	display: grid;
 	}	
 	.image11, .image12, .image13{
 	width: 255px;
@@ -286,6 +385,11 @@ width: 150px;
 @media screen and (min-width: 930px){
 	.article1, .article2, .article3, .article4, .article5, .article6{
 		width: 30%;	
+		display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 10px;
+justify-content: space-evenly;
+
 }
 	.asideImage{
 		box-sizing: border-box;
@@ -321,6 +425,8 @@ margin-right: auto;
 margin-right: auto;
 	margin-top: 60px;
 }
+
+
 .image11, .image12, .image13{
 
 margin-right: 40px;
@@ -379,11 +485,12 @@ margin-top: 20px;
 }
 }
 
-/* we will now do third page*/
+/* we will now do pricing page*/
+
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
 .body3{
-	background-image: url("image/images-2.jpeg");
+	background-image: url("image/image2..jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -400,13 +507,10 @@ h2{
 
  .table{
  	 border-collapse: collapse;
- 	 margin: 25px 0;
+ 	 margin-left: 20px;
  	 font-size: 1em;
  	 min-width: 400px;
- 	 margin-left: auto;
- 	 margin-right: auto;
-
-
+ 	
  }
 
 tr, th{
@@ -439,16 +543,46 @@ p{
 }
 p a{
 text-decoration: none;
-color: hsl(0, 100%, 50%);
+color: hsl(40%, 50%, 50%);
 }
+.asideImage2{
+	width: 20px;
+height: 10px;
+margin-left: auto;
+margin-bottom: auto;
+
+
+}
+.image14,.image15,.image16{
+	height: 200px;
+	width: 250px;
+	float: right;
+	border: solid 5px royalblue;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+@media screen and (min-width: 930px){
+
+.image14{
+	margin-top: -600px;
+}
+.image15{
+	margin-top: -400px;
+}
+.image16{
+	margin-top: -200px;
+}
+}
+
+
 .Cookies3{
 	width: 150px;
   height: 50px;
   border:  solid 3px #FA0; 
 	opacity: 50%;
-	color: white;
+	color: black;
 	float: right;
-	font-style: oblique;	
+	margin-top: 400px;
 }
 .copyright3{
 	background-color: #000;
@@ -457,14 +591,42 @@ color: hsl(0, 100%, 50%);
 	text-align: left;
 	margin-top: 15%;
 }
+
+@media screen and (min-width: 650px) and (max-width: 929px){
+	.asideImage2{
+		box-sizing: border-box;
+		float: left;
+padding: 30px;
+width: 700px;
+height: 500px;
+	}
+	.image16{
+		display: none;
+	}
+}
+@media screen and  (max-width: 650px) {
+	.asideImage2{
+		float: left;
+		width: 200px;
+		height: 700px;
+		margin-left: 20px;
+	}
+	.table{
+margin-left: 5px;
+	}
+	.image14,.image15,.image16{
+		margin-left: 60px;
+}
+}
 /* we will now do contact page*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .contactpage{
 
-	margin: 40px;
-margin-right: 40px;
+	margin: 20px;
+margin-right: 20px;
 z-index: 9999px;
+width: 400px;
 
 }
 
@@ -475,8 +637,6 @@ z-index: 9999px;
 }
 
 .placeholder{
-	
-
 font-family: 'Anton', sans-serif;
 
 	width: 400px;
@@ -506,10 +666,93 @@ border: none;
 
 
 }
-.fieldset2, .fieldset1{
+ .fieldset1{
 	border-radius: 14px;
 	border-color: rgba(255, 219, 3, 1.0);
+	width: 200px;
+	height: 400px;
 }
+.fieldset2{
+	border-radius: 14px;
+	border-color: rgba(255, 219, 3, 1.0);
+	width: 200px;
+	height: 100px;
+}
+.asideImage3{
+	width: 20px;
+height: 10px;
+margin-left: auto;
+margin-bottom: auto;
+}
+.image17,.image19,.image18{
+height: 200px;
+	width: 250px;
+	float: right;
+}
+.copyright4{
+	
+	background-color: #000;
+	color: #FFC72B;
+	clear: both;
+	text-align: center;
+	margin-top: 22%;
+
+}
+
+@media screen and (min-width: 930px){
+	
+
+	.image17{
+		margin-top: -550px;
+	}
+	.image18{
+		margin-top: -350px;
+		border: solid white;
+	}
+	.image19{
+		margin-top: -200px;
+	}
+	.image17,.image18,.image19{
+		margin-right: 30px;
+		clear: both;
+		float: right;
+	}
+	
+}
+
+@media screen and (min-width: 650px) and (max-width: 929px){
+	.image17{
+		margin-top: -550px;
+	}
+	.image18{
+		margin-top: -350px;
+		border: solid white;
+	}
+	.image19{
+		margin-top: -200px;
+	}
+	.image17,.image18,.image19{
+		margin-right: 30px;
+		clear: both;
+	}
+}
+@media screen and  (max-width: 650px) {
+	
+	.asideImage3{
+		float: left;
+	height: 75px;
+	}
+	.image17,.image18,.image19{
+		float: left;
+		width: 150px;
+		height: 100px;
+		clear: both;
+	}
+	.copyright4{
+		margin-top:65%;
+	}
+}
+
 .Cookies4{
 	float: right;
 		width: 150px;
@@ -521,15 +764,7 @@ border: none;
 	font-style: oblique;
 	margin-top: 21%;
 }
-.copyright4{
-	
-	background-color: #000;
-	color: #FFC72B;
-	clear: both;
-	text-align: center;
-	margin-top: 22%;
 
-}
 
 
 

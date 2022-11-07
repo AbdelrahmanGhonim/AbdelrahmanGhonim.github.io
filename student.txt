@@ -1,7 +1,5 @@
-o Student name: your name
-o Student number: your student number
-o Student class: your class
-o URL student GitHub website: your GitHub URL 
-https://username.github.io )
-o URL student GitHub repository: your GitHub URL 
-https://github.com/username/repositoryname )
+Student name: Abdelrahman Ghonim
+Student number: 695857
+Student class: IT1A
+URL student GitHub website: https://username.github.io 
+URL student GitHub repository: https://github.com/username/repositoryname 
