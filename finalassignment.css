@@ -102,7 +102,7 @@ margin-top: 20px;
 	background-color: #000;
 	color: #FFF;
 	clear: both;
-	text-align: center;
+	text-align: left;
 }
 /* if our screen (mobile) is less than 650px width do hamburger menu*/
 @media screen and  (max-width: 650px) {
@@ -694,7 +694,7 @@ height: 200px;
 	background-color: #000;
 	color: #FFC72B;
 	clear: both;
-	text-align: center;
+	text-align: left;
 	margin-top: 22%;
 
 }
