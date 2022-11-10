@@ -178,6 +178,9 @@ img{
 	.section2{
 		padding-top: 90px;
 	}
+	.section1{
+		padding-top: 100px;
+	}
 	.p1,.p2,.p3{
 		margin-left: 4px;
 	}
@@ -315,6 +318,9 @@ footer{
 @media screen and (min-width: 650px) and (max-width: 929px){
 	.aside1{
 		display: none;
+	}
+	.section1{
+		padding-top: 90px;
 	}
 	.MobileAndTabletlist{
 		float: left;
