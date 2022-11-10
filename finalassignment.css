@@ -171,6 +171,16 @@ img{
 	.Cookies{
 		float: right;
 	}
+	.MobileAndTabletlist{
+		display: block;
+		float: left;
+	}
+	.section2{
+		padding-top: 90px;
+	}
+	.p1,.p2,.p3{
+		margin-left: 4px;
+	}
 }
 /* now we will start design the index page*/
 
@@ -274,6 +284,9 @@ footer{
 
 		float: right;
 			}
+			.MobileAndTabletlist{
+				display: none;
+			}
 
 	.PcAndTabletVideo{
 		margin-left: auto;
@@ -302,6 +315,15 @@ footer{
 @media screen and (min-width: 650px) and (max-width: 929px){
 	.aside1{
 		display: none;
+	}
+	.MobileAndTabletlist{
+		float: left;
+	}
+		.section2{
+		padding-top: 150px;
+	}
+	#section3{
+		padding-top: 150px;
 	}
 	.PcAndTabletVideo{
 		margin-left:40px;
@@ -368,6 +390,9 @@ footer{
 	width: 450px;
 	display: grid;
 	}	
+	.article4,.article6{
+		display: none;
+	}
 	.image11, .image12, .image13{
 	width: 255px;
   height: 200px;
