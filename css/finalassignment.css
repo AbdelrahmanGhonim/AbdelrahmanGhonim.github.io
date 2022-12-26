@@ -4,6 +4,14 @@
 *{
 	box-sizing: border-box;
 }
+h1, body {
+	line-height: 1;
+}
+body, section
+{
+	word-spacing: 0.2px;
+}
+
 .body1, .body2, .body3{
 	margin: 0;
 	padding: 0;
@@ -12,6 +20,7 @@
 }
 .body1{
 	font-family: sans-serif;
+	word-spacing: 2px;
 }
 
 .body2{
@@ -74,6 +83,9 @@ display: block;
 	width: 30px;
 	height: 21px;
 }
+.toggle-button:hover +  .navbar-links {
+	display: block;
+}
 .toggle-button .bar{
 
 	height: 3px;
@@ -81,6 +93,7 @@ display: block;
 	background-color: #ffffff;
 	border-radius: 10px;
 }
+
 figcaption{
 	font-size: 9px;
 	
@@ -104,8 +117,9 @@ margin-top: 20px;
 	clear: both;
 	text-align: left;
 }
+
 /* if our screen (mobile) is less than 650px width do hamburger menu*/
-@media screen and  (max-width: 650px) {
+@media screen and  (max-width: 480px) {
 	.toggle-button{
 		display: flex;
 	}
@@ -153,6 +167,7 @@ img{
 
 .Cookies{
 	float: right;
+
 }
 .figcaption3{
 	margin-top: 50px;
@@ -165,8 +180,14 @@ img{
 	margin-top: -30px;
 }
 	.section1,.section2,.section3{
-		width: 450px;
-		height: 400px;
+		width: 300px;
+		height: 450px;
+
+		
+
+	}
+	.header1,.header2,.header3{
+		width: 440px;
 	}
 	.Cookies{
 		float: right;
@@ -187,6 +208,10 @@ img{
 }
 /* now we will start design the index page*/
 
+.header1{
+	margin-top: 80px;
+	letter-spacing: 2px;
+}
 .h2{
 	color: black;
 	text-align: center;
@@ -271,6 +296,7 @@ color: #b8860b;
 .ol{
 	color: blue;
 	font-size: 20px;
+
 }
 li{
 	color: black;
@@ -279,7 +305,7 @@ footer{
 	font-size: 15px;
 }
 
-@media screen and (min-width: 930px){
+@media screen and (min-width: 1280px){
 	.aside1{
 		float: right;
 	}
@@ -315,7 +341,7 @@ footer{
 
 }
 
-@media screen and (min-width: 650px) and (max-width: 929px){
+@media screen and (min-width: 481px) and (max-width: 1279px){
 	.aside1{
 		display: none;
 	}
@@ -348,17 +374,25 @@ footer{
 	.section1,.section2,.section3{
 		width: 400px;
 		height: 400px;
+		flex-grow: 3;
+
 	}
 }
 .Cookies{
 	width: 150px;
   height: 50px;
-  border:  solid 3px #FA0; 
+  border:#FA0; 
+ border-style: double;
+ border-width: 5px;
 	opacity: 50%;
 	color: #000;
 	float: right;	
 	margin-top: 100px;
 	margin-right: 5rem;
+position: fixed;
+bottom: 10px;
+    right: 0px;
+    z-index: 9999;
 }
 
 .image1, .image2, .image3{
@@ -366,9 +400,12 @@ footer{
 	width: 150px;
 	height: 150px;
 }
+
+
 /* we will now do product page*/
 .body2, .body1, .body3, .body4{
-	text-transform: lowercase;
+	text-transform: uppercase;
+
 
 }
 
@@ -381,13 +418,20 @@ footer{
 .Cookies2{
 	width: 150px;
   height: 50px;
-  border:  solid 2px #FA0; 
+  border:#FA0; 
+ border-style: double;
+ border-width: 5px;
 	opacity: 50%;
 	color: #000;
 	float: right;	
-	margin-top: 250px;
+	margin-top: 100px;
+	margin-right: 5rem;
+position: fixed;
+bottom: 10px;
+    right: 0px;
+    z-index: 9999;
 }
-@media screen and  (max-width: 650px) {
+@media screen and  (max-width: 480px) {
 .article1, .article2, .article3, .article4, .article5, .article6{
 	margin-left: auto;
 	margin-right: auto;
@@ -395,7 +439,12 @@ footer{
 	margin-top: 20px;
 	width: 450px;
 	display: grid;
+	grid-template-areas: "header header header" "sidebar main main" "footer footer footer";
+
 	}	
+	.aside1{
+		display: none;
+	}
 	.article4,.article6{
 		display: none;
 	}
@@ -413,11 +462,15 @@ footer{
 	margin-top:520px;
 }
 }
-@media screen and (min-width: 930px){
+@media screen and (min-width: 1280px){
 	.article1, .article2, .article3, .article4, .article5, .article6{
 		width: 30%;	
 		display: grid;
 grid-template-columns: auto auto auto;
+grid-template-areas: 
+"heads heads" 
+"pragraph pragraph";
+
 grid-gap: 10px;
 justify-content: space-evenly;
 
@@ -464,10 +517,11 @@ margin-right: 40px;
 margin-left: 40px;
 width: 255px;
 height: 200px;
+flex-shrink: 1;
 
 }
 }
-@media screen and (min-width: 650px) and (max-width: 929px){
+@media screen and (min-width: 481px) and (max-width: 1279px){
 .article1, .article3, .article6{
 	float: left;
 	clear: both;
@@ -529,10 +583,18 @@ h3{
 	font-family: 'Notable', sans-serif;
 
 	font-size: 18px;
-	color: white;
+	color: black;
+	margin-right: 20px;
+}
+ h3::first-letter{
+	font-size: 30px;
+	color: blue;
 }
 h2{
-	color: white;
+	color: black;
+}
+.h3{
+	position: relative;
 }
 
 
@@ -544,15 +606,20 @@ h2{
  	
  }
 
+ tr td:first-child {
+ 	background-color: #ff0;
+
+ }
+
 tr, th{
 	padding: 12px 15px;
 }
 tr{
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid ;
 }
 tr:nth-child(even){
-	background-color: black;
-	color: white;
+	background-color: grey;
+	color: black;
 }
 tr:nth-child(2n+3){
 	background-color: #FBE448;
@@ -582,7 +649,9 @@ height: 10px;
 margin-left: auto;
 margin-bottom: auto;
 
-
+}
+p{
+	color: black;
 }
 .image14,.image15,.image16{
 	height: 200px;
@@ -592,7 +661,7 @@ margin-bottom: auto;
 	margin-top: 6px;
 	margin-right: 10px;
 }
-@media screen and (min-width: 930px){
+@media screen and (min-width: 1280px){
 
 .image14{
 	margin-top: -600px;
@@ -607,13 +676,20 @@ margin-bottom: auto;
 
 
 .Cookies3{
-	width: 150px;
+width: 150px;
   height: 50px;
-  border:  solid 3px #FA0; 
+  border:#FA0; 
+ border-style: double;
+ border-width: 5px;
 	opacity: 50%;
-	color: black;
-	float: right;
-	margin-top: 400px;
+	color: #000;
+	float: right;	
+	margin-top: 100px;
+	margin-right: 5rem;
+position: fixed;
+bottom: 10px;
+    right: 0px;
+    z-index: 9999;
 }
 .copyright3{
 	background-color: #000;
@@ -623,7 +699,7 @@ margin-bottom: auto;
 	margin-top: 15%;
 }
 
-@media screen and (min-width: 650px) and (max-width: 929px){
+@media screen and (min-width: 481px) and (max-width: 1279px){
 	.asideImage2{
 		box-sizing: border-box;
 		float: left;
@@ -635,7 +711,7 @@ height: 500px;
 		display: none;
 	}
 }
-@media screen and  (max-width: 650px) {
+@media screen and  (max-width: 480px) {
 	.asideImage2{
 		float: left;
 		width: 200px;
@@ -730,7 +806,7 @@ height: 200px;
 
 }
 
-@media screen and (min-width: 930px){
+@media screen and (min-width: 1280px){
 	
 
 	.image17{
@@ -751,7 +827,7 @@ height: 200px;
 	
 }
 
-@media screen and (min-width: 650px) and (max-width: 929px){
+@media screen and (min-width: 481px) and (max-width: 1279px){
 	.image17{
 		margin-top: -550px;
 	}
@@ -767,7 +843,7 @@ height: 200px;
 		clear: both;
 	}
 }
-@media screen and  (max-width: 650px) {
+@media screen and  (max-width: 480px) {
 	
 	.asideImage3{
 		float: left;
@@ -785,22 +861,66 @@ height: 200px;
 }
 
 .Cookies4{
-	float: right;
-		width: 150px;
+	width: 150px;
   height: 50px;
-  border:  solid 3px #FA0; 
+  border:#FA0; 
+ border-style: double;
+ border-width: 5px;
 	opacity: 50%;
-	color: black;
-	float: right;
-	font-style: oblique;
-	margin-top: 21%;
+	color: #000;
+	float: right;	
+	margin-top: 100px;
+	margin-right: 5rem;
+position: fixed;
+bottom: 10px;
+    right: 0px;
+    z-index: 9999;
 }
 
 
 
 
- 
+@media print{
+	.header1{
 
+color: rgba(255, 199, 44, 1.0);
+	}
+}
+ .h2{
+text-transform: uppercase;
+
+ }
+ .a1:hover {
+ 	text-decoration: underline;
+
+ }
+ .a1:active{
+ 	color: black;
+ 	
+ }
+footer a{
+letter-spacing: 3px;
+
+}
+h1 ,h2{
+	letter-spacing:1px;
+}
+h2,h1{
+font-family: normal;
+}
+p + footer{
+	font-size: 15px;
+}
+ol >li{
+	color: goldenrod;
+}
+.nutrition{
+	 color: #FFC72B;
+}
+.poc{
+	 color: cmyk(0%, 20%, 100%, 0%);
+	color: rgb(255, 199, 43);
+}
 
 
 
